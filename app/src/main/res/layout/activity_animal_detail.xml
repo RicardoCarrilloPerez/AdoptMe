@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoperros"
+    android:padding="16dp"
+    android:layout_marginTop="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="MissingConstraints"
+            app:cardCornerRadius="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/gradient_background">
+
+                <ImageView
+                    android:id="@+id/imageViewAnimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textViewAnimalName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/antonregular"
+                    android:layout_gravity="center"
+                    android:textSize="35sp"
+                    android:layout_marginTop="16dp"
+                    android:text="Nombre" />
+
+                <TextView
+                    android:id="@+id/textViewAnimalType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15sp"
+                    android:layout_gravity="center"
+                    android:text="Tipo" />
+
+                <TextView
+                    android:id="@+id/textViewAnimalDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Aquí van todos los detalles del animal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/textViewAnimalPersonality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Y aqui van los detalles de la personalidad de cada persona"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/textViewAnimalAdditional"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet ipsum iaculis, egestas neque sed, pellentesque est. Nullam blandit lacinia lobortis. Pellentesque ipsum ipsum, semper nec mattis efficitur, porta." />
+
+                <TextView
+                    android:id="@+id/textViewAnimalLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Lorem ipsum dolor sit am." />
+
+                <Button
+                    android:id="@+id/buttonAdoptar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adoptar"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#1d2269"
+                    android:textColor="@android:color/white" />
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:backgroundTint="#1d2269"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Regresar"
+                    android:layout_marginTop="24dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

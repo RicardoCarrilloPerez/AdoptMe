@@ -1,0 +1,95 @@
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="#f8f8f8"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ref_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/refugio1"
+            tools:src="@tools:sample/avatars" />
+        <TextView
+            android:id="@+id/ref_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/poppinsblack"
+            android:text="Nombre: Refugio San Francisco"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ref_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Telefono: (664) 639-0812" />
+
+        <TextView
+            android:id="@+id/ref_ubi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Ubicacion: Tijuana, Baja California" />
+
+        <TextView
+            android:id="@+id/ref_direc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Direccion: Calle 6ta #1880, Col. Zona Norte,
+            Tijuana, BC " />
+
+        <TextView
+            android:id="@+id/ref_horarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Horarios: Lunes a Viernes, 9:00 am - 5:00 pm" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#1d2269"
+            android:text="REGRESAR"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:fontFamily="@font/poppinsblack"
+            android:text="Cuestionario"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppinsblack"
+            android:text="Contesta las siguientes preguntas para determinar que mascotas son aptas para tí."
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Espacio y Vivienda -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsblack"
+            android:text="Espacio y Vivienda"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Vives en una casa con patio, un departamento pequeño o un departamento grande?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Departamento pequeño" />
+
+            <RadioButton
+                android:id="@+id/radioOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Departamento grande" />
+
+            <RadioButton
+                android:id="@+id/radioOption3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Casa con patio" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Tienes acceso a áreas exteriores (parques, jardines, etc.) donde puedas llevar a pasear a tu perro?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupAccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioOption5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, pero no frecuentemente" />
+
+            <RadioButton
+                android:id="@+id/radioOption6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, frecuentemente" />
+        </RadioGroup>
+
+        <!-- Tiempo y Actividad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsblack"
+            android:text="Tiempo y Actividad"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Cuánto tiempo al día puedes dedicar a pasear y jugar con tu perro?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Menos de 1 hora" />
+
+            <RadioButton
+                android:id="@+id/radioOption8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="1-2 horas" />
+
+            <RadioButton
+                android:id="@+id/radioOption9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Más de 2 horas" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Prefieres actividades al aire libre como correr y caminar largas distancias, o prefieres actividades más tranquilas en interiores?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Actividades tranquilas en interiores" />
+
+            <RadioButton
+                android:id="@+id/radioOption11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Un balance entre ambas" />
+
+            <RadioButton
+                android:id="@+id/radioOption12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Actividades al aire libre" />
+        </RadioGroup>
+
+        <!-- Experiencia con Mascotas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsblack"
+            android:text="Experiencia con Mascotas"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Has tenido perros antes? Si es así, ¿qué tipo de perros (pequeños, medianos, grandes)?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioOption14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, perros pequeños o medianos" />
+
+            <RadioButton
+                android:id="@+id/radioOption15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, perros grandes" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Te sientes cómodo manejando perros más grandes y fuertes?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioOption17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, en algunos casos" />
+
+            <RadioButton
+                android:id="@+id/radioOption18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, completamente" />
+        </RadioGroup>
+
+        <!-- Preferencias Personales -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsblack"
+            android:text="Preferencias Personales"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Prefieres un perro que sea fácil de transportar, o uno que pueda acompañarte en actividades más vigorosas?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupPreferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Fácil de transportar" />
+
+            <RadioButton
+                android:id="@+id/radioOption20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Ambas" />
+
+            <RadioButton
+                android:id="@+id/radioOption21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Actividades vigorosas" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Te gusta la idea de tener un perro que pueda actuar como guardián, o prefieres un compañero más tranquilo?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGuardian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Compañero tranquilo" />
+
+            <RadioButton
+                android:id="@+id/radioOption23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Ambos" />
+
+            <RadioButton
+                android:id="@+id/radioOption24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Guardían" />
+        </RadioGroup>
+
+        <!-- Comportamiento y Necesidades del Perro -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsblack"
+            android:text="Comportamiento y Necesidades del Perro"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Qué tan importante es para ti que el perro sea fácil de entrenar?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="No importante" />
+
+            <RadioButton
+                android:id="@+id/radioOption26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Algo importante" />
+
+            <RadioButton
+                android:id="@+id/radioOption27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Muy importante" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Estás dispuesto a lidiar con niveles de energía altos y las necesidades de ejercicio de un perro grande?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEnergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioOption29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, en algunos casos" />
+
+            <RadioButton
+                android:id="@+id/radioOption30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, completamente" />
+        </RadioGroup>
+
+        <!-- Familia y Otros Animales -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsblack"
+            android:text="Familia y Otros Animales"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Tienes niños pequeños o personas mayores en casa?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioOption32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, pero no frecuentemente" />
+
+            <RadioButton
+                android:id="@+id/radioOption33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sí, frecuentemente" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="¿Tienes otras mascotas en casa? Si es así, ¿qué tipo de mascotas?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="No tengo otras mascotas" />
+
+            <RadioButton
+                android:id="@+id/radioOption35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Tengo otras mascotas pequeñas" />
+
+            <RadioButton
+                android:id="@+id/radioOption36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Tengo otras mascotas grandes" />
+        </RadioGroup>
+
+        <!-- Botón de enviar -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1d2269"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="ENVIAR"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

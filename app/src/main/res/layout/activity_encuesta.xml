@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondoperros">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="35sp"
+            android:text="Cuestionario"
+            android:fontFamily="@font/antonregular"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="Contesta las siguientes preguntas para determinar qué tipo de animal se adapta mejor a tí."
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            />
+        <!-- Pregunta 1: Espacio en el hogar -->
+        <TextView
+            android:id="@+id/tvPreguntaEspacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuánto espacio tienes en tu hogar?"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerEspacio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/espacio_hogar_array"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:background="#FFF3E0"/>
+
+        <!-- Pregunta 2: Tiempo disponible para la mascota -->
+        <TextView
+            android:id="@+id/tvPreguntaTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuánto tiempo puedes dedicar al cuidado y la atención de tu mascota cada día?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/spinnerTiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tiempo_dedicado_array"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:background="#FFF3E0"/>
+
+        <!-- Pregunta 3: Preferencia de tipo de mascota -->
+        <TextView
+            android:id="@+id/tvPreguntaTipoAnimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Tienes alguna preferencia por el tipo de mascota?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/rgTipoAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbPerro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perro"
+                android:buttonTint="#F68F8F"/>
+
+            <RadioButton
+                android:id="@+id/rbGato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gato"
+                android:buttonTint="#F68F8F"/>
+
+            <RadioButton
+                android:id="@+id/rbConejo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conejo"
+                android:buttonTint="#F68F8F"/>
+
+            <RadioButton
+                android:id="@+id/rbSinPreferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No tengo preferencia"
+                android:buttonTint="#F68F8F"/>
+        </RadioGroup>
+
+
+        <!-- Pregunta 5: Nivel de actividad física preferido en la mascota -->
+        <TextView
+            android:id="@+id/tvPreguntaNivelActividad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Qué nivel de actividad física prefieres en una mascota?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinnerNivelActividad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/nivel_actividad_array"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:background="#FFF3E0"/>
+
+        <!-- Pregunta 6: Niños o personas mayores en el hogar -->
+        <TextView
+            android:id="@+id/tvPreguntaNinos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Hay niños o personas mayores en tu hogar?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/rgNinos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbNinosSi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:buttonTint="#F68F8F"/>
+
+            <RadioButton
+                android:id="@+id/rbNinosNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:buttonTint="#F68F8F"/>
+        </RadioGroup>
+
+        <!-- Pregunta 7: Presupuesto mensual para cuidado de la mascota -->
+        <TextView
+            android:id="@+id/tvPreguntaPresupuesto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="¿Cuánto estás dispuesto a gastar mensualmente en el cuidado de tu mascota?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPresupuesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:entries="@array/presupuesto_array"
+            android:background="#FFF3E0"/>
+
+        <!-- Pregunta 8: Disposición para adoptar mascotas con necesidades especiales -->
+        <TextView
+            android:id="@+id/tvPreguntaNecesidadesEspeciales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="¿Estás dispuesto a adoptar una mascota con necesidades especiales (medicamentos, dietas específicas, etc.)?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgNecesidadesEspeciales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbNecesidadesEspecialesSi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:buttonTint="#F68F8F"/>
+
+            <RadioButton
+                android:id="@+id/rbNecesidadesEspecialesNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:buttonTint="#F68F8F"/>
+        </RadioGroup>
+
+        <!-- Botón para enviar la encuesta -->
+        <Button
+            android:id="@+id/btnEnviarEncuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Encuesta"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#F8BBD0"/>
+
+    </LinearLayout>
+</ScrollView>

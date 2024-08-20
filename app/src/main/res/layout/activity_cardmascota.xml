@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="#f8f8f8"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/dog_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/perrito1"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/dog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Nombre: Max"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dog_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Edad: 3 años" />
+
+        <TextView
+            android:id="@+id/dog_breed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Raza: Golden Retriever" />
+
+        <TextView
+            android:id="@+id/dog_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Peso: 30 kg" />
+
+        <TextView
+            android:id="@+id/dog_favorite_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Comida favorita: Pollo" />
+
+        <TextView
+            android:id="@+id/dog_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Descripción: Amigable y juguetón. Le encanta correr y jugar con otros perros." />
+
+        <TextView
+            android:id="@+id/dog_hobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Pasatiempos: Jugar a la pelota, nadar y correr en el parque." />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#1d2269"
+            android:text="ADOPTAR"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

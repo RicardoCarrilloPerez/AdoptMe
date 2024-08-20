@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_adopciones"
+        android:icon="@drawable/baseline_pets_24"
+        android:title="Adopciones" />
+    <item
+        android:id="@+id/nav_adoptantes"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Adoptantes" />
+    <item
+        android:id="@+id/nav_refugios"
+        android:icon="@drawable/baseline_business_24"
+        android:title="Refugios" />
+
+    <item android:title="Comunicacion">
+    <menu>
+        <item
+            android:id="@+id/nav_phone"
+            android:icon="@drawable/baseline_local_phone_24"
+            android:title="56 4208 9986"/>
+        <item
+            android:id="@+id/nav_phone2"
+            android:icon="@drawable/baseline_local_phone_24"
+            android:title="56 4208 9982"/>
+    </menu>
+    </item>
+
+    <item android:title="Otras acciones">
+        <menu>
+           <item
+               android:id="@+id/nav_settings"
+               android:icon="@drawable/baseline_settings_24"
+               android:title="Configuracion"/>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/baseline_share_24"
+                android:title="Compartir"/>
+        </menu>
+    </item>
+</menu>

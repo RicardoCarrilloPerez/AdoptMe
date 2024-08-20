@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AdoptMe</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="espacio_hogar_array">
+        <item>Pequeño (departamento)</item>
+        <item>Mediano (casa con jardín pequeño)</item>
+        <item>Grande (casa con jardín grande)</item>
+    </string-array>
+    <string-array name="tiempo_dedicado_array">
+        <item>Menos de 1 hora</item>
+        <item>1-2 horas</item>
+        <item>Más de 2 horas</item>
+    </string-array>
+    <string-array name="nivel_actividad_array">
+        <item>Alta (jugar y pasear mucho)</item>
+        <item>Moderada (algunos paseos o juegos)</item>
+        <item>Baja (prefiero una mascota tranquila)</item>
+    </string-array>
+    <string-array name="presupuesto_array">
+        <item>Bajo (comida básica y cuidados mínimos)</item>
+        <item>Medio (comida de calidad y algunos cuidados adicionales)</item>
+        <item>Alto (comida premium, cuidados veterinarios frecuentes)</item>
+    </string-array>
+
+</resources>
